@@ -11,6 +11,8 @@
 		1995968128E24E580019AA9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995968028E24E580019AA9B /* ContentView.swift */; };
 		1995968328E24E590019AA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1995968228E24E590019AA9B /* Assets.xcassets */; };
 		1995968728E24E590019AA9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1995968628E24E590019AA9B /* Preview Assets.xcassets */; };
+		1995969528E24FD10019AA9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995969428E24FD10019AA9B /* HomeView.swift */; };
+		1995969728E250840019AA9B /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995969628E250840019AA9B /* UberMapViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		1995968228E24E590019AA9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1995968428E24E590019AA9B /* UberSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UberSwiftUI.entitlements; sourceTree = "<group>"; };
 		1995968628E24E590019AA9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1995969428E24FD10019AA9B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1995969628E250840019AA9B /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,11 @@
 		1995967D28E24E580019AA9B /* UberSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1995967E28E24E580019AA9B /* UberSwiftUIApp.swift */,
+				1995969128E24FAD0019AA9B /* Models */,
+				1995969028E24FA50019AA9B /* Managers */,
+				1995968F28E24F9E0019AA9B /* Extensions */,
+				1995968E28E24F970019AA9B /* Core */,
+				1995968D28E24F900019AA9B /* App */,
 				1995968028E24E580019AA9B /* ContentView.swift */,
 				1995968228E24E590019AA9B /* Assets.xcassets */,
 				1995968428E24E590019AA9B /* UberSwiftUI.entitlements */,
@@ -67,6 +75,60 @@
 				1995968628E24E590019AA9B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1995968D28E24F900019AA9B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1995967E28E24E580019AA9B /* UberSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1995968E28E24F970019AA9B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1995969328E24FC10019AA9B /* Views */,
+				1995969228E24FB90019AA9B /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1995968F28E24F9E0019AA9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1995969028E24FA50019AA9B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1995969128E24FAD0019AA9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1995969228E24FB90019AA9B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1995969328E24FC10019AA9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1995969428E24FD10019AA9B /* HomeView.swift */,
+				1995969628E250840019AA9B /* UberMapViewRepresentable.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1995969728E250840019AA9B /* UberMapViewRepresentable.swift in Sources */,
+				1995969528E24FD10019AA9B /* HomeView.swift in Sources */,
 				1995968128E24E580019AA9B /* ContentView.swift in Sources */,
 				1995967F28E24E580019AA9B /* UberSwiftUIApp.swift in Sources */,
 			);
@@ -287,7 +351,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.streamliner.UberSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +391,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.streamliner.UberSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
