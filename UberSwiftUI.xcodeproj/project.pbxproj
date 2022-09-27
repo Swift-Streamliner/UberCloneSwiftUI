@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1965362828E36851005D477B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1965362728E36851005D477B /* LocationManager.swift */; };
 		1995967F28E24E580019AA9B /* UberSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995967E28E24E580019AA9B /* UberSwiftUIApp.swift */; };
 		1995968128E24E580019AA9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995968028E24E580019AA9B /* ContentView.swift */; };
 		1995968328E24E590019AA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1995968228E24E590019AA9B /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1965362728E36851005D477B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1995967B28E24E580019AA9B /* UberSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1995967E28E24E580019AA9B /* UberSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSwiftUIApp.swift; sourceTree = "<group>"; };
 		1995968028E24E580019AA9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		1995969028E24FA50019AA9B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1965362728E36851005D477B /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				1995969728E250840019AA9B /* UberMapViewRepresentable.swift in Sources */,
 				1995969528E24FD10019AA9B /* HomeView.swift in Sources */,
+				1965362828E36851005D477B /* LocationManager.swift in Sources */,
 				1995968128E24E580019AA9B /* ContentView.swift in Sources */,
 				1995967F28E24E580019AA9B /* UberSwiftUIApp.swift in Sources */,
 			);
@@ -333,6 +337,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -373,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
